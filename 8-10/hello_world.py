@@ -92,5 +92,46 @@ y = thistuple.index(8)
 print(y)
 print('\n')
 
+#Set
+print("Set")
+thisset = {"apple", "banana", "cherry"}
+print(thisset)
 
+thisset.add("orange")
+print(thisset)
 
+mylist = ["kiwi", "orange"]
+thisset.update(mylist)
+print(thisset)
+
+thisset.remove("banana")
+print(thisset)
+
+for x in thisset:
+  print(x)
+print('\n')
+
+#Dictionaries
+print("Dictionaries")
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "year": 2020,
+  "colors": ["red", "white", "blue"]
+}
+thisdict["year"] = 2018
+thisdict["color"] = "red"
+thisdict.pop("model")
+print(thisdict)
+print(thisdict["brand"])
+print(type(thisdict))
+
+thisdict1 = dict(name = "John", age = 36, country = "Norway")
+print(thisdict1)
+
+for x in thisdict:
+    try:
+        print(x)
+    except:
+        print("An exception occurred")
